@@ -1,16 +1,108 @@
-# React + Vite
+# ⚡ HyperPay Analytics — Payment Intelligence Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react)
+![Vite](https://img.shields.io/badge/Vite-Latest-646CFF?style=for-the-badge&logo=vite)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript)
+![Deployed](https://img.shields.io/badge/Deployed-Vercel-000000?style=for-the-badge&logo=vercel)
 
-Currently, two official plugins are available:
+## 🔗 Live Demo
+**👉 [View Live Project](https://payment-dashboard-rose.vercel.app/)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 📌 About The Project
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+HyperPay Analytics is a production-grade Payment Intelligence Dashboard built with React.js, inspired by Juspay's HyperCheckout payment infrastructure. This project simulates a real-world payment monitoring platform where businesses can track transactions, analyze payment trends, and monitor key performance indicators in real time.
 
-## Expanding the ESLint configuration
+The dashboard handles 40+ mock transactions across multiple payment methods including UPI, Card, NetBanking, Wallet, and BNPL — giving a complete picture of payment health at a glance.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Features
+
+- 📊 **Overview Tab** — KPI cards with live sparklines, weekly bar chart, payment method donut chart, and recent transactions
+- 💳 **Transactions Tab** — Searchable, filterable table by status and payment method with pagination
+- 📈 **Analytics Tab** — Hourly volume chart, status distribution bars, merchant leaderboard, and performance KPIs
+- ⚡ **Live Success Rate** — Updates every 2 seconds with a glowing pulse animation
+- 🎨 **Custom SVG Charts** — Bar chart, donut chart, and sparklines built from scratch without any chart library
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Usage |
+|---|---|
+| React.js 18 | UI Framework |
+| Vite | Build Tool & Dev Server |
+| JavaScript ES6+ | Core Logic |
+| SVG | Custom Charts |
+| CSS-in-JS | Inline Styling System |
+| Vercel | Deployment |
+
+---
+
+## ⚙️ React Hooks Used
+
+| Hook | Purpose |
+|---|---|
+| `useState` | Managing tabs, filters, search, pagination |
+| `useEffect` | Live success rate timer with cleanup |
+| `useMemo` | Optimized filtering, pagination, stats calculation |
+
+---
+
+## 🚀 Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/Poornachandra-creater/payment-dashboard.git
+
+# Navigate into the project
+cd payment-dashboard
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+Open `http://localhost:5173` in your browser.
+
+---
+
+## 📁 Project Structure
+
+```
+payment-dashboard/
+├── src/
+│   ├── App.jsx        ← Main dashboard component
+│   ├── App.css        ← Styles
+│   └── index.css      ← Global styles
+├── index.html         ← Entry point
+├── package.json       ← Dependencies
+└── vite.config.js     ← Vite config
+```
+
+---
+
+## 🎯 Key Learnings
+
+- Deep understanding of React Hooks and component architecture
+- Performance optimization using `useMemo` for expensive calculations
+- Building custom data visualizations using raw SVG math
+- Multi-parameter filtering and pagination logic
+- Real-world project structure inspired by fintech products
+
+---
+
+## 👨‍💻 Author
+
+**Poorna Chandra**
+- GitHub: [@Poornachandra-creater](https://github.com/Poornachandra-creater)
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
