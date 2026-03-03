@@ -6,7 +6,7 @@
 ![Deployed](https://img.shields.io/badge/Deployed-Vercel-000000?style=for-the-badge&logo=vercel)
 
 ## 🔗 Live Demo
-**👉 [View Live Project](https://payment-dashboard-rose.vercel.app/)**
+**👉 [View Live Project](https://ecommerce-catalog-alpha.vercel.app/)**
 
 ---
 
